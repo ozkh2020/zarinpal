@@ -269,6 +269,13 @@ header{
     header {
         width: 940px;
     }
+    .banner{
+        width: 900px;
+        padding: 60px 40px 120px;
+    }
+    .banner-image img{
+        width: 430px;
+    }
 }
 @media(max-width:990px){
     header{
@@ -287,6 +294,22 @@ header{
     .header-ul li{
         margin: 0 10px;
     }
+    .banner{
+        width: auto;
+        padding: 40px 40px 85px;
+        margin-left: 35px;
+        margin-right: 35px;
+    }
+    .banner-image{
+        display: none;
+    }
+    .banner-text{
+        text-align: center;
+        font-size: 1rem;
+    }
+    .banner-button{
+        margin-top: 40px;
+    }
 }
 @media(max-width:768px){
     .header-ul{
@@ -300,4 +323,20 @@ header{
         margin: auto;
         padding: 10px 8px;
     }
+    .banner{
+        margin-left: 8px;
+        margin-right: 8px;
+    }
 }   
+@media(max-width:575px){
+    .banner{
+        padding: 80px 40px;
+    }
+    .banner-text h3{
+        font-size: 1.2rem;
+        text-align: right;
+    }
+    .banner-text p{
+        text-align: justify;
+    }
+}
