@@ -246,6 +246,66 @@ header{
     position: relative;
     top: -60px;
 }
+.online-payment{
+    width: 1170px;
+    margin: auto;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+/* .online-payment img{
+    width: 450px;
+    height: 480px;
+} */
+.online-payment img{
+    width: 480px;
+    height: 480px;
+}
+.section-text{
+    margin: 30px 0;
+    width: 540px;
+}
+.section-text h2{
+    color: #747480;
+    font-family: YekanBakhMedium;
+    font-weight: 500;
+    font-size: 1.4rem;
+    margin: 20px 0 5px;
+}
+.section-text h3{
+    color:#303030;
+    font-family: YekanBakhHeavy;
+    font-weight: 600;
+    font-size: 2rem;
+}
+.section-text p{
+    color: #303030;
+    font-family: YekanBakhMedium;
+    text-align: justify;
+    line-height: 40px;
+    border-bottom: #dfe1e4;
+    padding-bottom: 20px;
+    margin-top: 16px;
+}
+.section-links{
+    margin-top: 40px;
+    display: flex;
+}
+.section-links .first-button{
+    font-size: 0.9rem;
+    font-family: iranyekanwebmedium;
+    color: #000;
+    background: #ffd900;
+    padding: 6px 14px;
+    border: none;
+    border-radius: 10px;
+    margin-left: 10px;
+    text-decoration: none;
+}
+.section-links .second-button{
+    
+}
+
  @keyframes fadeInDown{
     0%{
         opacity: 0;
@@ -311,6 +371,7 @@ header{
         margin-top: 40px;
     }
 }
+
 @media(max-width:768px){
     .header-ul{
         display: none;
