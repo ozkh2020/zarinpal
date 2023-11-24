@@ -94,7 +94,7 @@ header{
     height: 1px;
     background-color: #dfe1df;
     width: 90%;
-    margin: 8px 0;
+    margin: 8px;
 }
 
 .more-item {
@@ -136,7 +136,7 @@ header{
 #show-more-menu li{
     margin: 0;
     padding: 10px 12px;
-    font-size: .8rem;
+    font-size: 0.8rem;
     color: black;
 }
 #show-more-menu li:hover{
@@ -160,11 +160,11 @@ header{
 }
 .product-menu a p:first-child{
     color: black;
-    font-size: .95rem;
+    font-size: 0.95rem;
 }
 .product-menu a p:last-child{
     color:black;
-    font-size: .7rem;
+    font-size: 0.7rem;
 }
 
 .product-menu a{
@@ -253,17 +253,14 @@ header{
     align-items: flex-start;
     justify-content: space-between;
 }
-/* .online-payment img{
+
+.online-payment .section-image{
     width: 450px;
-    height: 480px;
-} */
-.online-payment img{
-    width: 480px;
     height: 480px;
 }
 .section-text{
     margin: 30px 0;
-    width: 540px;
+    width: 530px;
 }
 .section-text h2{
     color: #747480;
@@ -304,7 +301,24 @@ header{
 }
 .section-links .second-button{
     
+    display: block;
+    font-size: .9rem;
+    font-family: iranyekanwebmedium;
+    color: #28457b;
+    background-color: rgba(232, 239, 254, .7);
+    padding: 6px 14px;
+    border-radius: 10px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
 }
+.section-links .second-button img{
+
+    width: 18px;
+    height: 15px;
+    margin-right: 5px;
+}
+
 
  @keyframes fadeInDown{
     0%{
@@ -335,6 +349,9 @@ header{
     }
     .banner-image img{
         width: 430px;
+    }
+    .online-payment{
+        width: 940px;
     }
 }
 @media(max-width:990px){
@@ -370,6 +387,14 @@ header{
     .banner-button{
         margin-top: 40px;
     }
+    .online-payment{
+        width: auto;
+        flex-direction: column;
+        align-items: center;
+    }
+    .section-text{
+        width: 95%;
+    }
 }
 
 @media(max-width:768px){
@@ -388,6 +413,15 @@ header{
         margin-left: 8px;
         margin-right: 8px;
     }
+    .section-text{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .online-payment img{
+        width: 450px;
+        height: 480px;
+    }
 }   
 @media(max-width:575px){
     .banner{
@@ -399,5 +433,15 @@ header{
     }
     .banner-text p{
         text-align: justify;
+    }
+    .online-payment .section-image{
+        display: none;
+    }
+    .section-text{
+        width: 80%;
+        padding: 0 10px;
+    }
+    .section-text h3{
+        font-size: 1.8rem;
     }
 }
