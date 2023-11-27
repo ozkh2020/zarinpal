@@ -300,7 +300,6 @@ header{
     text-decoration: none;
 }
 .section-links .second-button{
-    
     display: block;
     font-size: .9rem;
     font-family: iranyekanwebmedium;
@@ -313,12 +312,88 @@ header{
     align-items: center;
 }
 .section-links .second-button img{
-
     width: 18px;
     height: 15px;
     margin-right: 5px;
 }
 
+.attributes{
+    width: 1170px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.defination{
+    width: 35%;
+    margin-top: 50px;
+}
+
+.defination h3{
+    font-size: 2rem;
+    font-family: YekanBakhHeavy;
+}
+
+.defination p{
+    margin-top: 40px;
+    font-size: 1rem;
+    line-height: 40px;
+    width: 85%;
+    color: #303030;
+    text-align: justify;
+    font-family: YekanBakhMedium;
+}
+
+.items{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    width: 60%;
+    padding: 30px;
+}
+
+.items img{
+    width: 60px;
+    height: 60px;
+}
+
+.items .item{
+    padding: 18px 20px 25px 0;
+}
+
+.items .item div{
+    display: flex;
+    align-items: center;
+}
+
+.item h4{
+    font-family: YekanBakhHeavy;
+    margin-right: 20px;
+    font-size: 1.5rem;
+}
+
+.items p{
+    font-size: 1rem;
+    margin: 20px 0 20px 10px;
+    font-family: YekanBakhMedium;
+    color: #303030;
+    line-height: 30px;
+}
+
+.first-item{
+    border-left: 1px solid #e0e4e7;
+}
+
+.second-item{
+    border-bottom: 1px solid #e0e4e7;
+}
+
+.third-item{
+    border-top: 1px solid #e0e4e7;
+}
+
+.fourth-item{
+    border-right: 1px solid #e0e4e7;
+}
 
  @keyframes fadeInDown{
     0%{
@@ -352,6 +427,32 @@ header{
     }
     .online-payment{
         width: 940px;
+    }
+    .attributes{
+        width: 940px;
+        padding: 0 8px;
+        flex-direction: column;
+    }
+    .defination{
+        width: 100%;
+        margin-top: 40px;
+    }
+    .defination p {
+        width: 100%;
+        margin-top: 30px;
+    }
+    .first-item, 
+    .second-item, 
+    .third-item,
+    .fourth-item{
+        border: none;
+    }
+    .items{
+        width: 90%;
+        padding: 30px;
+    }
+    .items .item{
+        padding: 18px 0 20px 50px;
     }
 }
 @media(max-width:990px){
@@ -395,6 +496,10 @@ header{
     .section-text{
         width: 95%;
     }
+    .attributes{
+        width: auto;
+        padding: 0 35px;
+    }
 }
 
 @media(max-width:768px){
@@ -422,6 +527,24 @@ header{
         width: 450px;
         height: 480px;
     }
+    .defination{
+        text-align: center;
+        margin-top: 90px;
+    }
+    .defination p{
+        text-align: center;
+    }
+    .defination h3{
+        font-size: 1.6rem;
+    }
+    .items{
+        width: 100%;
+        padding: 50px 0;
+    }
+    .item .items{
+        padding: 18px 0 20px 20px;
+    }
+
 }   
 @media(max-width:575px){
     .banner{
@@ -443,5 +566,12 @@ header{
     }
     .section-text h3{
         font-size: 1.8rem;
+    }
+    .items{
+        padding: 50px 0;
+        grid-template-columns: 1fr;
+    }
+    .items .item{
+        padding: 18px 0;
     }
 }
