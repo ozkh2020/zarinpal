@@ -395,6 +395,45 @@ header{
     border-right: 1px solid #e0e4e7;
 }
 
+.start-box{
+    width: 1170px;
+    height: 220px;
+    margin: auto;
+    margin-top: 50px;
+    border: 1px solid silver;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.start-box h4{
+    font-family:YekanBakhHeavy;
+     font-size: 1.7rem;
+}
+.start-box p{
+    font-family:YekanBakhMedium ;
+    margin-top: 10px;
+    color: #747480;
+    font-size: 1.4rem;
+}
+.start-box a{
+    text-decoration: none;
+    font-family:iranyekanwebmedium ;
+    height: 28px;
+    line-height: 28px;
+    padding: 4px 14px;
+    font-size: .9rem;
+    background-color: #ffd900;
+    color: black;
+    border-radius: 10px;
+}
+.start-box a:hover{
+    background-color: rgba(193, 150, 176, 0.8);
+}
+
+
  @keyframes fadeInDown{
     0%{
         opacity: 0;
@@ -453,6 +492,10 @@ header{
     }
     .items .item{
         padding: 18px 0 20px 50px;
+    }
+    .start-box{
+        width: calc(100% - 76px);
+        margin: 0 38px;
     }
 }
 @media(max-width:990px){
@@ -544,6 +587,10 @@ header{
     .item .items{
         padding: 18px 0 20px 20px;
     }
+    .start-box{
+        margin: 0 8px;
+        width: calc(100% - 16px);
+    }
 
 }   
 @media(max-width:575px){
@@ -573,5 +620,14 @@ header{
     }
     .items .item{
         padding: 18px 0;
+    }
+    .start-box{
+        height: 120px;
+    }
+    .start-box h4{
+        font-size: 1.2rem;
+    }
+    .start-box p{
+        font-size: 1rem;
     }
 }
